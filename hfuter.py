@@ -306,7 +306,7 @@ def main():
     if stu.daily_checkin(env_dist['address']):
         requests.post('https://sc.ftqq.com/'+env_dist['sckey']+'.send?text=自动打卡成功'+output_data)
     else:
-       requests.post('https://sc.ftqq.com/'+env_dist['sckey']+'.send?text=自动打开失败'+output_data)
+       requests.post('https://sc.ftqq.com/'+env_dist['sckey']+'.send?text=自动打卡失败'+output_data)
 
 if __name__ == "__main__":
     main()
